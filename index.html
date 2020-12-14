@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>treballs RIA Laura Gómez Vilaplana</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <style type="text/css">
+        /*reset*/
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+
+        html {
+            font-size: 10px;
+        }
+
+        header {
+            padding: 0 1em;
+            font-family: 'Montserrat', sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            background-size: cover;
+            background-image: url(img/Movil.png);
+            height: 35vh;
+        }
+
+        h1 {
+            font-size: 6vw;
+            color: gray;
+            line-height: 1em;
+            font-weight: 700;
+            align-items: flex-end;
+            padding-top: 11em;
+            color: grey;
+            text-transform: uppercase;
+
+
+        }
+
+        h2 {
+            font-size: 5vw;
+            color: darkgrey;
+        }
+
+        h3 {
+            font-size: 4vw;
+            color: darkgrey;
+        }
+
+        nav {
+            font-size: 4vw;
+            position: sticky;
+            top: 0;
+            justify-content: space-around;
+            align-items: center;
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            padding: 12px;
+            height: 80px;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: bold;
+            background-color: dimgrey;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: white;
+
+        }
+
+        main {
+            display: flex;
+            flex-direction: column;
+            padding: 10em 1em 0 2em;
+            font-family: 'Montserrat', sans-serif;
+            ;
+            background: white;
+            font-size: 3vw;
+            color: dimgrey;
+        }
+
+        section {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            height: 350px;
+            background: white;
+        }
+
+        section figure {
+            padding: 1em 1.6em 0 1em;
+        }
+
+        section figure img {
+            width: 100%;
+            height: 280px;
+            object-position: top;
+            object-fit: fill;
+        }
+
+        section figcaption {
+            display: flex;
+            flex-grow;
+            justify-content: center;
+            align-items: center;
+        }
+
+        footer {
+            background-color: dimgray;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            padding-top: 8em;
+            width: 100%;
+            height: 200px;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        footer a {
+            color: white;
+            text-decoration: none;
+            font-size: 3vw;
+
+        }
+
+        .xxss {
+            display: flex;
+            justify-content: center;
+        }
+
+        .email {
+            text-align: center;
+        }
+
+
+
+
+        /* Extra small devices (phones, 600px and down) */
+        @media only screen and (max-width: 600px) {
+            body {
+                background: orange;
+            }
+        }
+
+        /* Small devices (portrait tablets and large phones, 600px and up) */
+        @media only screen and (min-width: 600px) {
+            body {
+                background: green;
+            }
+
+            header {
+                background-image: url(img/Tablet.png);
+                padding: 0 10em;
+            }
+
+            h1 {
+                font-size: 5vw;
+                line-height: 1em;
+                font-weight: 700;
+            }
+
+            h2 {
+                font-size: 4vw;
+            }
+
+            h3 {
+                font-size: 3vw;
+            }
+
+            nav {
+                font-size: 2.6vw;
+                position: sticky;
+                top: 0;
+            }
+
+            section {
+                min-width: 200px;
+                max-width: 400px;
+                margin: 0 1.6em 0;
+                display: flex;
+                flex-direction: column;
+                height: 348px;
+                background: white;
+            }
+
+            .grid-container {
+                padding: 0 2vw;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: flex-end;
+                flex-wrap: wrap;
+            }
+        }
+
+        /* Extra large devices (large laptops and desktops, 1200px and up) */
+        @media only screen and (min-width: 1200px) {
+            html {
+                font-size: 23px;
+            }
+
+            body {
+                background: pink;
+            }
+
+            header {
+                height: 60vh;
+                background-image: url(img/Ordenador.png);
+                background-position: top;
+                background-size: cover;
+
+            }
+
+            h1 {
+                font-size: 4.5vw;
+                line-height: 1em;
+                font-weight: 700;
+                padding-top: 10em;
+            }
+
+            h2 {
+                font-size: 3.5vw;
+                width: 100%;
+                text-align: right;
+            }
+
+            h3 {
+                font-size: 2.7vw;
+                padding: 0 0 0 10vw;
+            }
+
+            nav {
+                position: sticky;
+                justify-content: space-between;
+                padding: 0 6em;
+            }
+
+            nav a {
+                font-size: 0.8em;
+                margin: 0 2.5em 0 0.5em;
+            }
+
+            section {}
+
+            section {
+                min-width: 20em;
+                max-width: 23em;
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                height: 600px;
+                background: white;
+            }
+
+            section figure {
+                padding: 1em 1.6em 0 1em;
+            }
+
+            section figure img {
+                width: auto;
+                height: 9em;
+                object-position: center center;
+                object-fit: fill;
+
+            }
+
+            section figcaption {
+                display: flex;
+                justify-content:center;
+                align-items: center;
+            }
+
+            section figure img {}
+
+            section h4 {
+                font-size: 0.5em;
+            }
+
+            footer {
+                padding: 0 9em;
+                flex-direction: column;
+                background-color: dimgray;
+                display: flex;
+                flex-direction: row;
+            }
+
+            .xxss {
+                width: 75%;
+                align-items: center ;
+                
+
+            }
+
+            .xxss a {
+                padding: 0 3em 0 0;
+
+            }
+
+            .email {
+                width: 25%;
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
+            }
+
+    </style>
+</head>
+
+<body>
+
+    <header class="header">
+        <h1>Laura Gómez Vilaplana</h1>
+        <h2>Recursos Interactius Aplicats</h2>
+        <h3>Gràfica Publicitaria</h3>
+    </header>
+    <nav class="menu">
+        <a href="#">projectes</a>
+        <a href="#">contacte</a>
+    </nav>
+    <main class="main">
+        <div class="grid-container">
+           <a href="https://gomezvl.github.io/P0/">
+            <section>
+                <figure>
+                    <img src="img/img.png" alt="">
+                </figure>
+                <figcaption>
+                    <h4>p0_llocweb</h4>
+                </figcaption>
+            </section></a>
+            <section>
+                <figure>
+                    <img src="img/img.png" alt="">
+                </figure>
+                <figcaption>
+                    <h4>p1_portfoli_projectes</h4>
+                </figcaption>
+            </section>
+            <section>
+                <figure>
+                    <img src="img/img.png" alt="">
+                </figure>
+                <figcaption>
+                    <h4>p0_llocweb</h4>
+                </figcaption>
+            </section>
+            <section>
+                <figure>
+                    <img src="img/img.png" alt="">
+                </figure>
+                <figcaption>
+                    <h4>p0_llocweb</h4>
+                </figcaption>
+            </section>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class></div>
+        <div class="Insta">
+            <a href="#">Instagram</a>
+        </div>
+        <div class="FB"><a href="#">Facebook</a></div>
+        <div class="email">
+            <a href="mailto:gomezvl@easdalcoi.es">Email
+            </a>
+        </div>
+    </footer>
+</body>
+
+</html>
